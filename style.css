@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+form, .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  margin-bottom: 2rem;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f1c40f;
+  border: none;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f39c12;
+}
+
+.error {
+  color: #ffb3b3;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li span {
+  flex-grow: 1;
+  word-break: break-word;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-btn, .complete-btn {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #2ecc71;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.complete-btn:hover {
+  background-color: #27ae60;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  form, ul, .contact-form {
+    width: 90%;
+  }
+}
